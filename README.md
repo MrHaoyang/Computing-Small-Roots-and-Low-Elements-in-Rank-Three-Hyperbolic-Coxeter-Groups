@@ -5,6 +5,13 @@ title, by **Haoyang Tang**. The case studies use the parameter order
 `(m12, m13, m23)` and cover `(3,4,5)`, `(4,4,4)`, and `(4,4,infinity)` at
 levels zero and one.
 
+The default branch provides an **English-language edition** of the four
+notebooks and shared reference source. Chinese comments, messages and saved
+text output have been translated; mathematical algorithms and recorded numeric
+results are retained. The original publication snapshot is preserved in
+[commit fe2c187](https://github.com/MrHaoyang/Computing-Small-Roots-and-Low-Elements-in-Rank-Three-Hyperbolic-Coxeter-Groups/tree/fe2c187aafd91105a6f1330752d1220c1dc7d029),
+which is the source snapshot cited by the manuscript.
+
 ## Start here
 
 Download this repository using **Code > Download ZIP** and extract it, or clone it.
@@ -17,7 +24,7 @@ Install the reference-runner dependency:
 python -m pip install -r experiments/requirements.txt
 ```
 
-Run one small pilot and check that the extracted algebra matches both original
+Run one small pilot and check that the extracted algebra matches both current
 visualization notebooks:
 
 ```console
@@ -58,15 +65,15 @@ Level-one counts include the corresponding level-zero sets.
 
 | Location | Role |
 | --- | --- |
-| `experiments/reference_algebra.py` | Rank-three algebra used for the paper's tables; extracted without changing the algebraic section shared by the two visualization notebooks. |
+| `experiments/reference_algebra.py` | English-language edition of the rank-three reference algebra; its algebraic AST matches the corresponding section in both current visualization notebooks. |
 | `experiments/run_experiments.py` | Standalone numerical experiment and audit runner. |
 | `experiments/results.json` | Original recorded counts, timings, audits, environment and profiling data. |
 | `experiments/audit_thresholds.py` | Separate post-review numerical threshold diagnostic. |
 | `experiments/threshold_audit.json` | Recorded output of that separate diagnostic. |
-| `notebooks/n small roots.ipynb` | Preserved interactive exploratory prototype. |
-| `notebooks/n low elements.ipynb` | Preserved interactive exploratory prototype. |
-| `notebooks/shi_arrangement.ipynb` | Original zero-Shi arrangement PNG renderer with static low-element input lists. |
-| `notebooks/shi_polyhedron.ipynb` | Original zero-Shi polyhedron PNG renderer using inverse chambers. |
+| `notebooks/n small roots.ipynb` | English-language edition of the interactive exploratory prototype. |
+| `notebooks/n low elements.ipynb` | English-language edition of the interactive exploratory prototype. |
+| `notebooks/shi_arrangement.ipynb` | English-language edition of the zero-Shi arrangement PNG renderer with static low-element input lists. |
+| `notebooks/shi_polyhedron.ipynb` | English-language edition of the zero-Shi polyhedron PNG renderer using inverse chambers. |
 | `figures/` | Supplied manuscript SVG/PDF assets and their complete-label versions. |
 | `MANIFEST.json` | File sizes, SHA-256 hashes and Git blob hashes for this publication snapshot. |
 
@@ -74,8 +81,14 @@ The two general-rank prototypes are archived for provenance. They use bounded
 search and numerical heuristics and have known limitations discussed in the
 manuscript appendix. Use the rank-three reference runner to reproduce the
 paper's tables; the prototypes are not a certified arbitrary-rank implementation.
-All four supplied notebooks, the reference algebra, runner and historical
-measurements are preserved byte for byte.
+The four current notebooks and reference source contain the authorized English
+translations, so their file hashes differ from the original snapshot.
+`experiments/results.json`, its historical measurements and source hashes, and
+the supplied vector figures remain byte for byte unchanged. The historical
+hashes describe the original snapshot, while `MANIFEST.json` describes this
+English-language edition. The runner's numerical logic is unchanged; its
+module description now identifies the translation accurately. The original
+notebooks remain accessible in the linked historical commit.
 
 ## Open and use the visualization notebooks
 
@@ -94,6 +107,8 @@ visualization notebooks are each provided as one complete code cell. Their
 settings are at the top:
 
 - Change `COXETER_PARAMETERS` using `(m12, m13, m23)`, for example `(4,4,"inf")`.
+  Infinity accepts `"inf"`, `"infinity"`, `"unbounded"`, or the infinity symbol.
+  The former Chinese-word alias has been replaced by `"unbounded"` in this edition.
 - Supply the corresponding complete `LOW_0_WORDS`; for the arrangement also
   supply the complete `LOW_1_WORDS`, including every level-zero element.
 - `OUTPUT_FILE` selects the PNG filename; `None` uses an automatic name.

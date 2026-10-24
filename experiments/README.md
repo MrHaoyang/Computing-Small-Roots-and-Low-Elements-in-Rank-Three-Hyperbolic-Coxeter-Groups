@@ -2,12 +2,12 @@
 
 ## Files and scope
 
-- `reference_algebra.py`: unmodified algebraic section extracted from the supplied visualization notebook; AST-equivalent to that section in both notebooks.
+- `reference_algebra.py`: English-language edition of the algebraic section extracted from the supplied visualization notebook; AST-equivalent to that section in both current notebooks. The original source is preserved in commit `fe2c187aafd91105a6f1330752d1220c1dc7d029`.
 - `run_experiments.py`: standalone runner; it does not execute rendering cells, edit original notebooks, or implement an optimized enumerator.
 - `results.json`: recorded results underlying this manuscript's tables and experimental statements.
 - `requirements.txt`: the NumPy version used for the recorded run. The recorded Python version is 3.12.14.
 
-The script uses only NumPy and the Python standard library. The original notebooks are optional for source-integrity checks, not required to reproduce enumeration.
+The script uses only NumPy and the Python standard library. The current notebooks are optional for source-integrity checks, not required to reproduce enumeration. Their comments, messages and saved text outputs have been translated to English without changing mathematical algorithms or saved numeric results. Historical hashes in `results.json` refer to the original snapshot; current English-edition hashes are in the repository's `MANIFEST.json`.
 
 ## Run
 
@@ -18,7 +18,7 @@ python -m pip install -r requirements.txt
 python run_experiments.py --repeats 3 --output rerun_results.json
 ```
 
-Keep `results.json` unchanged when checking the manuscript's recorded numbers. A rerun generates new timing measurements. To additionally verify the extraction against the user's two original files, supply the directory containing them:
+Keep `results.json` unchanged when checking the manuscript's recorded numbers. A rerun generates new timing measurements. To additionally verify the extraction against the two current English-language visualization notebooks, supply the directory containing them:
 
 ```text
 python run_experiments.py --repeats 3 --output rerun_results.json --notebooks-dir "PATH_TO_NOTEBOOK_DIRECTORY"

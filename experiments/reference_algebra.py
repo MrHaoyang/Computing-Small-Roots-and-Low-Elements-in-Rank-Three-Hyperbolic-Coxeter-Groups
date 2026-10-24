@@ -12,7 +12,7 @@ import numpy as np
 
 GENERATOR_ORDER = ("1", "2", "3")
 INFINITE_ORDER = inf
-INFINITE_ORDER_TOKENS = {"inf", "infinity", "∞", "无穷"}
+INFINITE_ORDER_TOKENS = {"inf", "infinity", "∞", "unbounded"}
 
 
 def normalize_coxeter_order(value):
@@ -23,11 +23,11 @@ def normalize_coxeter_order(value):
         try:
             value = int(normalized)
         except ValueError as exc:
-            raise ValueError(f"无效的 Coxeter 阶：{value}") from exc
+            raise ValueError(f"Invalid Coxeter order: {value}") from exc
     if value == INFINITE_ORDER:
         return INFINITE_ORDER
     if not isinstance(value, int) or isinstance(value, bool) or value < 2:
-        raise ValueError("Coxeter 阶必须是不小于 2 的整数或无穷。")
+        raise ValueError("A Coxeter order must be an integer at least 2 or infinity.")
     return value
 
 
@@ -58,7 +58,7 @@ def lorentz_normals_from_gram(gram, tolerance=1e-9):
     negative = [index for index, value in enumerate(eigenvalues) if value < -tolerance]
     positive = [index for index, value in enumerate(eigenvalues) if value > tolerance]
     if len(negative) != 1 or len(positive) != 2:
-        raise ValueError("Gram 矩阵不具有 Lorentz signature (2,1)。")
+        raise ValueError("The Gram matrix does not have Lorentz signature (2,1).")
     order = negative + positive
     ordered_values = eigenvalues[order]
     ordered_vectors = eigenvectors[:, order]
@@ -69,7 +69,7 @@ def lorentz_normals_from_gram(gram, tolerance=1e-9):
     center = np.linalg.solve(equations, -np.ones(3))
     norm = float(center @ minkowski @ center)
     if norm >= -tolerance:
-        raise ArithmeticError("基本 chamber 的中心不在双曲面上。")
+        raise ArithmeticError("The center of the fundamental chamber is not on the hyperboloid.")
     if center[0] < 0:
         normal_matrix[0, :] *= -1.0
 
@@ -124,7 +124,7 @@ class CoxeterSystem3:
             for value in (m12, m13, m23)
         )
         if sum(coxeter_order_reciprocal(value) for value in parameters) >= 1:
-            raise ValueError("参数不满足双曲条件：1/m12 + 1/m13 + 1/m23 < 1。")
+            raise ValueError("The parameters do not satisfy the hyperbolicity condition: 1/m12 + 1/m13 + 1/m23 < 1.")
 
         self.m12, self.m13, self.m23 = parameters
         self.tolerance = float(tolerance)
@@ -162,8 +162,8 @@ class CoxeterSystem3:
         self.signature = (positive, negative, zero)
         if self.signature != (2, 1, 0):
             raise ValueError(
-                "Gram 矩阵不是 rank-3 双曲 signature (2,1)："
-                f"得到 {self.signature}。"
+                "The Gram matrix does not have rank-three hyperbolic signature (2,1): "
+                f"received {self.signature}."
             )
 
         identity = np.eye(3, dtype=np.float64)
@@ -183,7 +183,7 @@ class CoxeterSystem3:
         if normalized == "e":
             return ""
         if not re.fullmatch(r"[123]*", normalized):
-            raise ValueError(f"无效的 Coxeter 单词：{word}")
+            raise ValueError(f"Invalid Coxeter word: {word}")
         return normalized
 
     def word_matrix(self, word):
@@ -199,7 +199,7 @@ class CoxeterSystem3:
             else np.asarray(word_or_matrix, dtype=np.float64)
         )
         if matrix.shape != (3, 3):
-            raise ValueError("群元素矩阵必须是 3x3。")
+            raise ValueError("A group element matrix must be 3x3.")
         coordinates = self._key_coordinates(matrix)
         quantum = max(self.tolerance * 1000, 1e-6)
         bucket = tuple(
@@ -302,7 +302,7 @@ class CoxeterSystem3:
         if np.all(coefficients <= 0.0):
             return -coefficients
         raise ArithmeticError(
-            "计算得到的实根既非正根也非负根；生成元顺序或数值误差不一致。"
+            "The computed real root is neither positive nor negative; the generator order or numerical error is inconsistent."
         )
 
     def root_key(self, root):
@@ -335,7 +335,7 @@ class CoxeterSystem3:
         beta = np.asarray(root, dtype=np.float64).reshape(3)
         norm = float(beta.T @ self.gram @ beta)
         if abs(norm) <= self.tolerance:
-            raise ValueError("各向同性向量不能定义 Coxeter 反射。")
+            raise ValueError("An isotropic vector cannot define a Coxeter reflection.")
         return np.eye(3) - (2.0 / norm) * np.outer(beta, beta.T @ self.gram)
 
     def _record_root(self, root, depth):
@@ -356,7 +356,7 @@ class CoxeterSystem3:
 
     def enumerate_chambers(self, max_length):
         if not isinstance(max_length, int) or max_length < 0:
-            raise ValueError("max_length 必须是非负整数。")
+            raise ValueError("max_length must be a nonnegative integer.")
 
         identity = np.eye(3)
         identity_key = self.element_key(identity)
@@ -442,7 +442,7 @@ class CoxeterSystem3:
                 None,
             )
         if chamber is None:
-            raise ArithmeticError(f"无法找到单词 {word} 对应的 chamber。")
+            raise ArithmeticError(f"Cannot find the chamber corresponding to the word {word}.")
         chamber.aliases.add(display_word)
         return chamber
 
@@ -479,7 +479,7 @@ class CoxeterSystem3:
     def enumerate_m_small_roots(self, m):
         """Enumerate Sigma_m using the dominance-depth reflection rule."""
         if not isinstance(m, int) or m < 0:
-            raise ValueError("m 必须是非负整数。")
+            raise ValueError("m must be a nonnegative integer.")
         if m == 0:
             return self.enumerate_small_roots()
 
@@ -515,7 +515,7 @@ class CoxeterSystem3:
                 if known_depth is not None:
                     if known_depth != candidate_depth:
                         raise ArithmeticError(
-                            "同一根得到不一致的 dominance-depth。"
+                            "Inconsistent dominance depths were obtained for the same root."
                         )
                     continue
 
@@ -609,7 +609,7 @@ class CoxeterSystem3:
     def enumerate_m_low_elements(self, m):
         """Enumerate the finite Garside shadow L_m."""
         if not isinstance(m, int) or m < 0:
-            raise ValueError("m 必须是非负整数。")
+            raise ValueError("m must be a nonnegative integer.")
         if m == 0:
             return self.enumerate_low_elements()
 

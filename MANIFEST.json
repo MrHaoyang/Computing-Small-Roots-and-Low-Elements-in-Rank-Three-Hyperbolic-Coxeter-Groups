@@ -23,14 +23,14 @@
       "git_blob_sha1": "09844506c84bf0ff520858f68365a713d8a02cc9"
     },
     "experiments/README.md": {
-      "bytes": 5115,
-      "sha256": "ba206c643c23a3e3648df05471387790e6f43e332317b341348f60245273207d",
-      "git_blob_sha1": "285a8d783c2c8ddf39e533c07937ec34217be9a7"
+      "bytes": 5544,
+      "sha256": "e2b1c4372695ff1466c29f5fa8adf1e555921c4c3e518dd9c9f0b49e25263c0b",
+      "git_blob_sha1": "8527b598a7fa37e5cbc3966b9809aa3be88aab87"
     },
     "experiments/reference_algebra.py": {
-      "bytes": 23706,
-      "sha256": "63bc6fd31c3ce3aae27bb76ea6e39ed0046bc419f530421ef15aa559b4d78d91",
-      "git_blob_sha1": "4558caace308200c39dd70e1c2fd71e2bac9a54b"
+      "bytes": 23858,
+      "sha256": "f4e63dd94d7ff60aa991564332d251df9c8234e2dcdd3ae8925302ab6affadea",
+      "git_blob_sha1": "8ae9093a435c840049846135a47eac751fba4de1"
     },
     "experiments/requirements.txt": {
       "bytes": 13,
@@ -43,9 +43,9 @@
       "git_blob_sha1": "13777f447ed839d6b041d7363f03901f08d2bb8a"
     },
     "experiments/run_experiments.py": {
-      "bytes": 14598,
-      "sha256": "dc94b50e0d9032a2265a8231019f3eb3d4aea035983c68aaaf8f14363866b284",
-      "git_blob_sha1": "a14be9cbfcd56ac1d1bdc50ef52aeb1179ed9881"
+      "bytes": 14675,
+      "sha256": "ab3f39d2bcc30d2da71f95621a1eea01414e0ba7f175c38873758ed533767a2c",
+      "git_blob_sha1": "a9f7212eb52a1658be1804571bcd378977454680"
     },
     "experiments/threshold_audit.json": {
       "bytes": 4326,
@@ -108,34 +108,41 @@
       "git_blob_sha1": "30f59256090124222573344886c0c79d563ae643"
     },
     "notebooks/n low elements.ipynb": {
-      "bytes": 13189,
-      "sha256": "2643c7553ec62472253f18b13f684ace79cf77541d0a16ec615b7e14b46bb8d2",
-      "git_blob_sha1": "da883202a302a4ba8f659aae843e6ad8b3d4272f"
+      "bytes": 13240,
+      "sha256": "63692dd52c6121ca9fa1368312bb1a8762cc3ccad4b9e984d769042e011df7d5",
+      "git_blob_sha1": "8b0a7ea52bb15d040b30ac5501e95082a3c60bcb"
     },
     "notebooks/n small roots.ipynb": {
-      "bytes": 39133,
-      "sha256": "fba00441a8fb42fdd29935e7b2fbc81f95cd966054123eb54d0d89348d98d033",
-      "git_blob_sha1": "9304e7a85d08273dc6761d11ada671c5ca92a323"
+      "bytes": 39102,
+      "sha256": "0cc2ff8d50d5d901f09770f47bd7348af2e032629083405250fef29ea26e1139",
+      "git_blob_sha1": "2c50ce6389ea1eb2616a8191aa92e74b3d938491"
     },
     "notebooks/shi_arrangement.ipynb": {
-      "bytes": 75408,
-      "sha256": "fa086201c945b9e11272802df6109f82c11640b28df6cb35a6393ec55140453b",
-      "git_blob_sha1": "2980fb0661e4975c61fb8861f2200d32069b6b2c"
+      "bytes": 75698,
+      "sha256": "57233f80d510735283f81f1a6c5d4382150f0e917ba185d4d88c45c461bb7d52",
+      "git_blob_sha1": "2ca1bddbc6be4d0160709dce1b3b9202b5cd2ed4"
     },
     "notebooks/shi_polyhedron.ipynb": {
-      "bytes": 75864,
-      "sha256": "c6972a0f603951dc1a21d14cef603636cc71f69bcd3dfbc76c7b50b1561a8478",
-      "git_blob_sha1": "65677fa400d29f4b71d9952ef0c79d85453e6e03"
+      "bytes": 76164,
+      "sha256": "3d693d96c3ac3f938c8dddce8c28149598acf4283d3ae89f5a146cdcda05296d",
+      "git_blob_sha1": "9a4e2c43eac230751effee811a9fcfa2ebc911c2"
     },
     "README.md": {
-      "bytes": 6579,
-      "sha256": "2e0335cc06e1c68028939b0e17764563558dec71bf340e90d0f3b93573e5001a",
-      "git_blob_sha1": "03c99eb7ed0939bad3fcd197b021363180830836"
+      "bytes": 7862,
+      "sha256": "26e139afdc10d8b1a37587a5ec6f05a52d7ef1eb01af44b64b5899cf4a0aae2a",
+      "git_blob_sha1": "abea49ee033dfe337d1ab007525b61f7a829dda5"
     },
     "requirements-notebooks.txt": {
       "bytes": 134,
       "sha256": "16ddd052b409b67730c6d9a269b74991b8d0eb87590101105844f81a69d43cfc",
       "git_blob_sha1": "c6e6140208dc292934050163ef330c87f4509484"
     }
+  },
+  "language_edition": {
+    "language": "English",
+    "original_snapshot": "fe2c187aafd91105a6f1330752d1220c1dc7d029",
+    "scope": "Chinese comments, explanations, messages and saved textual output translated; mathematical algorithms and saved numeric results retained.",
+    "historical_results_json_preserved": true,
+    "input_alias_note": "The former Chinese infinity alias is replaced by unbounded; inf, infinity and the infinity symbol remain supported."
   }
 }

@@ -1,6 +1,7 @@
 """Reproduce the manuscript's bounded rank-three numerical experiments.
 
-The reference algebra is an unchanged extraction from shi_arrangement.ipynb.
+The reference algebra matches the English-language edition of shi_arrangement.ipynb.
+Its numerical logic is unchanged from the original fe2c187 snapshot.
 This runner never executes rendering cells or edits the supplied notebooks.
 """
 
