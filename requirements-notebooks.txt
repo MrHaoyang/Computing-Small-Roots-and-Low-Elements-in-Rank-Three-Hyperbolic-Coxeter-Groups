@@ -1,0 +1,5 @@
+# Optional interactive notebooks; benchmark pin remains in experiments/.
+-r experiments/requirements.txt
+Pillow
+scipy
+jupyterlab

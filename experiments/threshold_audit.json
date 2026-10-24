@@ -1,0 +1,150 @@
+{
+  "kind": "New post-review targeted diagnostic, not historical benchmark output",
+  "date": "2026-10-21",
+  "tolerance": 1e-09,
+  "decimal_precision": 80,
+  "boundary_classification_epsilon": "1e-60",
+  "scope": "Positive reflections of the three accepted Sigma_1 root sets only",
+  "limitations": "Numerical branch check, not an exact certificate or check of higher levels.",
+  "cases": [
+    {
+      "parameters": [
+        3,
+        4,
+        5
+      ],
+      "level": 1,
+      "root_count": 16,
+      "all_candidates": 48,
+      "excluded_negative_candidates": 3,
+      "positive_candidates": 45,
+      "strict_band_hits": [],
+      "near_boundary": [],
+      "high_precision_branch_mismatches": 0
+    },
+    {
+      "parameters": [
+        4,
+        4,
+        4
+      ],
+      "level": 1,
+      "root_count": 15,
+      "all_candidates": 45,
+      "excluded_negative_candidates": 3,
+      "positive_candidates": 42,
+      "strict_band_hits": [],
+      "near_boundary": [],
+      "high_precision_branch_mismatches": 0
+    },
+    {
+      "parameters": [
+        4,
+        4,
+        "inf"
+      ],
+      "level": 1,
+      "root_count": 13,
+      "all_candidates": 39,
+      "excluded_negative_candidates": 3,
+      "positive_candidates": 36,
+      "strict_band_hits": [],
+      "near_boundary": [
+        {
+          "root_coefficients": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "seed_simple_root": 2,
+          "reflection_path": [],
+          "reflection": 3,
+          "binary64_pairing": -1.0,
+          "decimal80_pairing": "-1.0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "numerical_depth_change": 1,
+          "high_precision_depth_change": 1
+        },
+        {
+          "root_coefficients": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "seed_simple_root": 3,
+          "reflection_path": [],
+          "reflection": 2,
+          "binary64_pairing": -1.0,
+          "decimal80_pairing": "-1.0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "numerical_depth_change": 1,
+          "high_precision_depth_change": 1
+        },
+        {
+          "root_coefficients": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "seed_simple_root": 2,
+          "reflection_path": [
+            3
+          ],
+          "reflection": 2,
+          "binary64_pairing": -1.0,
+          "decimal80_pairing": "-1.0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "numerical_depth_change": 1,
+          "high_precision_depth_change": 1
+        },
+        {
+          "root_coefficients": [
+            0.0,
+            1.0,
+            2.0
+          ],
+          "seed_simple_root": 2,
+          "reflection_path": [
+            3
+          ],
+          "reflection": 3,
+          "binary64_pairing": 1.0,
+          "decimal80_pairing": "1.0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "numerical_depth_change": -1,
+          "high_precision_depth_change": -1
+        },
+        {
+          "root_coefficients": [
+            0.0,
+            2.0,
+            1.0
+          ],
+          "seed_simple_root": 3,
+          "reflection_path": [
+            2
+          ],
+          "reflection": 2,
+          "binary64_pairing": 1.0,
+          "decimal80_pairing": "1.0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "numerical_depth_change": -1,
+          "high_precision_depth_change": -1
+        },
+        {
+          "root_coefficients": [
+            0.0,
+            2.0,
+            1.0
+          ],
+          "seed_simple_root": 3,
+          "reflection_path": [
+            2
+          ],
+          "reflection": 3,
+          "binary64_pairing": -1.0,
+          "decimal80_pairing": "-1.0000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "numerical_depth_change": 1,
+          "high_precision_depth_change": 1
+        }
+      ],
+      "high_precision_branch_mismatches": 0
+    }
+  ],
+  "positive_candidates_total": 123
+}

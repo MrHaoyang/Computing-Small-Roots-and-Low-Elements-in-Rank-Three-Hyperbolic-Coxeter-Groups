@@ -1,0 +1,141 @@
+{
+  "repository": "MrHaoyang/Computing-Small-Roots-and-Low-Elements-in-Rank-Three-Hyperbolic-Coxeter-Groups",
+  "prepared_on": "2026-10-24",
+  "files": {
+    ".gitattributes": {
+      "bytes": 63,
+      "sha256": "21bf05190d79a68fa8c8d481acbefecd29376db941fc0373696fb0091f458de6",
+      "git_blob_sha1": "a43262b7806a4fd5b06c0fb0f60f16c0e80c202c"
+    },
+    ".gitignore": {
+      "bytes": 119,
+      "sha256": "3eb24c23d7257b7db609810ec3af28f33bf55e07a6f2806b84c7fc4c75ae61b7",
+      "git_blob_sha1": "47f6901bb47280997793682e327c8c8f2c977962"
+    },
+    "CITATION.cff": {
+      "bytes": 383,
+      "sha256": "65d4b7705c7c2a53fd777d7e910b87a4f223259d84d33f887345ac48ddcbbaa6",
+      "git_blob_sha1": "92ada1d73cc5048bdeabc25737db9f328d2ea42d"
+    },
+    "experiments/audit_thresholds.py": {
+      "bytes": 6472,
+      "sha256": "2e58009dd848ceb92c820e2a14c207101115116a21f95041cf5def1254721eda",
+      "git_blob_sha1": "09844506c84bf0ff520858f68365a713d8a02cc9"
+    },
+    "experiments/README.md": {
+      "bytes": 5115,
+      "sha256": "ba206c643c23a3e3648df05471387790e6f43e332317b341348f60245273207d",
+      "git_blob_sha1": "285a8d783c2c8ddf39e533c07937ec34217be9a7"
+    },
+    "experiments/reference_algebra.py": {
+      "bytes": 23706,
+      "sha256": "63bc6fd31c3ce3aae27bb76ea6e39ed0046bc419f530421ef15aa559b4d78d91",
+      "git_blob_sha1": "4558caace308200c39dd70e1c2fd71e2bac9a54b"
+    },
+    "experiments/requirements.txt": {
+      "bytes": 13,
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+      "git_blob_sha1": "d59d856f1cc6c05962ca6bd4f14dd3315acd207c"
+    },
+    "experiments/results.json": {
+      "bytes": 33008,
+      "sha256": "dbb8146b9fd26b5c23fb77961eb4677ff450d13e93f34d3ed3932f11d5276091",
+      "git_blob_sha1": "13777f447ed839d6b041d7363f03901f08d2bb8a"
+    },
+    "experiments/run_experiments.py": {
+      "bytes": 14598,
+      "sha256": "dc94b50e0d9032a2265a8231019f3eb3d4aea035983c68aaaf8f14363866b284",
+      "git_blob_sha1": "a14be9cbfcd56ac1d1bdc50ef52aeb1179ed9881"
+    },
+    "experiments/threshold_audit.json": {
+      "bytes": 4326,
+      "sha256": "a12f85d4c150572dc0156a57038cbd61f7cda270db5e8626fd8da1b1e34c8e76",
+      "git_blob_sha1": "c8339f1de437ec58d5ac8ec50c15659418f9f63b"
+    },
+    "figures/README.md": {
+      "bytes": 585,
+      "sha256": "e855e60fadd12c4a6f3447b14b6b7b40e1766d4afba71043584f832e7a10bd40",
+      "git_blob_sha1": "b288a630b861546de5c635aab78f75128c05a81d"
+    },
+    "figures/shi_arrangement_345.pdf": {
+      "bytes": 195586,
+      "sha256": "06639ab73cf765ae8259fb261c60719ddd197ef73cbb0dddbe3a22444626bf88",
+      "git_blob_sha1": "bbdec990a00e1ace332616fffb36519458ef14cf"
+    },
+    "figures/shi_arrangement_345.svg": {
+      "bytes": 409382,
+      "sha256": "7e4fb1a2fd8ee109dd0708db0b7bde534e9649033839fce2309634d22484a9b6",
+      "git_blob_sha1": "f26938ca5ccde7c73cbcb3eacd6abe154957b78e"
+    },
+    "figures/shi_arrangement_345_complete_labels.pdf": {
+      "bytes": 197875,
+      "sha256": "70bcf227065f9f9b02033ee69debfc77d12d93c6903f68dda4e7211f0eccfddb",
+      "git_blob_sha1": "b032a5920e070abc1ac631920a9ec9f98059e59b"
+    },
+    "figures/shi_arrangement_345_complete_labels.svg": {
+      "bytes": 417028,
+      "sha256": "703487ef2cf868f8d146526b9a6c47f26bf43198a360fed64e157a83d176160c",
+      "git_blob_sha1": "03733abd66a897da80531075a1585896ed20f965"
+    },
+    "figures/shi_arrangement_345_full_labels.pdf": {
+      "bytes": 196239,
+      "sha256": "4b475ce63d82ee36b19d27804f25844e7f9995b6f11d68d9144142e16a6905c5",
+      "git_blob_sha1": "fec69015813a629a014ea651d19803eeb59c1e1e"
+    },
+    "figures/shi_arrangement_345_full_labels.svg": {
+      "bytes": 414129,
+      "sha256": "42d55fb6db0e848facfd92f229aad46d66b19920ddba04ddfbfbf67b764799b3",
+      "git_blob_sha1": "c0444c9dcae866ee3d4dd824f8a8c8662ab41231"
+    },
+    "figures/shi_polyhedron_345.pdf": {
+      "bytes": 195667,
+      "sha256": "b2e67e0fb10de58b616fd5425be09eb150073f0a75438229ea4f31c4882a5eb1",
+      "git_blob_sha1": "ec56df3d47c54fa24f67fed4e70c0e2a6e5a5325"
+    },
+    "figures/shi_polyhedron_345.svg": {
+      "bytes": 410280,
+      "sha256": "0bc856f33a16fd058b97d93e17a75b344f42063cb7428805b5418c54e53a65d0",
+      "git_blob_sha1": "cf90c4c46023351046265f288d017cdd418616d7"
+    },
+    "figures/shi_polyhedron_345_full_labels.pdf": {
+      "bytes": 195347,
+      "sha256": "05715ac438bd3aa50febac6d4e5e498f8dce416822342b1b2681fde766c91819",
+      "git_blob_sha1": "7c933d9481bccffa6f99cf6ef5af23dc9e256586"
+    },
+    "figures/shi_polyhedron_345_full_labels.svg": {
+      "bytes": 409833,
+      "sha256": "bfeddd00b1ba9ed6161dcdae84a418980d593b325247b99b445f121c6506b043",
+      "git_blob_sha1": "30f59256090124222573344886c0c79d563ae643"
+    },
+    "notebooks/n low elements.ipynb": {
+      "bytes": 13189,
+      "sha256": "2643c7553ec62472253f18b13f684ace79cf77541d0a16ec615b7e14b46bb8d2",
+      "git_blob_sha1": "da883202a302a4ba8f659aae843e6ad8b3d4272f"
+    },
+    "notebooks/n small roots.ipynb": {
+      "bytes": 39133,
+      "sha256": "fba00441a8fb42fdd29935e7b2fbc81f95cd966054123eb54d0d89348d98d033",
+      "git_blob_sha1": "9304e7a85d08273dc6761d11ada671c5ca92a323"
+    },
+    "notebooks/shi_arrangement.ipynb": {
+      "bytes": 75408,
+      "sha256": "fa086201c945b9e11272802df6109f82c11640b28df6cb35a6393ec55140453b",
+      "git_blob_sha1": "2980fb0661e4975c61fb8861f2200d32069b6b2c"
+    },
+    "notebooks/shi_polyhedron.ipynb": {
+      "bytes": 75864,
+      "sha256": "c6972a0f603951dc1a21d14cef603636cc71f69bcd3dfbc76c7b50b1561a8478",
+      "git_blob_sha1": "65677fa400d29f4b71d9952ef0c79d85453e6e03"
+    },
+    "README.md": {
+      "bytes": 6579,
+      "sha256": "2e0335cc06e1c68028939b0e17764563558dec71bf340e90d0f3b93573e5001a",
+      "git_blob_sha1": "03c99eb7ed0939bad3fcd197b021363180830836"
+    },
+    "requirements-notebooks.txt": {
+      "bytes": 134,
+      "sha256": "16ddd052b409b67730c6d9a269b74991b8d0eb87590101105844f81a69d43cfc",
+      "git_blob_sha1": "c6e6140208dc292934050163ef330c87f4509484"
+    }
+  }
+}
