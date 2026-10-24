@@ -108,24 +108,24 @@
       "git_blob_sha1": "30f59256090124222573344886c0c79d563ae643"
     },
     "notebooks/n low elements.ipynb": {
-      "bytes": 13240,
-      "sha256": "63692dd52c6121ca9fa1368312bb1a8762cc3ccad4b9e984d769042e011df7d5",
-      "git_blob_sha1": "8b0a7ea52bb15d040b30ac5501e95082a3c60bcb"
+      "bytes": 12881,
+      "sha256": "e2b956f83867c53ae480b42e2792b96ba8619b9091c1c3459486b6153f464668",
+      "git_blob_sha1": "f893175ae6da0174d0d4ac2ec7a2785c0c3d81da"
     },
     "notebooks/n small roots.ipynb": {
-      "bytes": 39102,
-      "sha256": "0cc2ff8d50d5d901f09770f47bd7348af2e032629083405250fef29ea26e1139",
-      "git_blob_sha1": "2c50ce6389ea1eb2616a8191aa92e74b3d938491"
+      "bytes": 39045,
+      "sha256": "e40a3d9b266a6f54c3e573f7971e08d711dabfd83e623b4368be9fed7b900fad",
+      "git_blob_sha1": "84d592e6955c0a65c805c463c5a6022697a6c6fd"
     },
     "notebooks/shi_arrangement.ipynb": {
-      "bytes": 75698,
-      "sha256": "57233f80d510735283f81f1a6c5d4382150f0e917ba185d4d88c45c461bb7d52",
-      "git_blob_sha1": "2ca1bddbc6be4d0160709dce1b3b9202b5cd2ed4"
+      "bytes": 75539,
+      "sha256": "a225ac1cf1514121acec2ef3227d90b45617295ae1dced9ad46d9f226a6750b2",
+      "git_blob_sha1": "728c04439f2fb7b41b1e594c10b42d15ef38efa3"
     },
     "notebooks/shi_polyhedron.ipynb": {
-      "bytes": 76164,
-      "sha256": "3d693d96c3ac3f938c8dddce8c28149598acf4283d3ae89f5a146cdcda05296d",
-      "git_blob_sha1": "9a4e2c43eac230751effee811a9fcfa2ebc911c2"
+      "bytes": 75958,
+      "sha256": "9c602155fa54d3a35917f6e72bc0c54c0a911086f6990979c8c5621495e02603",
+      "git_blob_sha1": "b9d20fa2b519e0b3fc61e679489d987ff5792cfa"
     },
     "README.md": {
       "bytes": 7862,
@@ -144,5 +144,11 @@
     "scope": "Chinese comments, explanations, messages and saved textual output translated; mathematical algorithms and saved numeric results retained.",
     "historical_results_json_preserved": true,
     "input_alias_note": "The former Chinese infinity alias is replaced by unbounded; inf, infinity and the infinity symbol remain supported."
+  },
+  "comment_cleanup": {
+    "parent_snapshot": "6ea40e09bf0a5499e37d38abecf40909f7c95f9a",
+    "removed_comments": 13,
+    "shortened_or_clarified_comments": 9,
+    "notebook_code_asts_outputs_and_metadata_preserved": true
   }
 }
